@@ -1,0 +1,10 @@
+---
+- job:
+   name: my_fourth_auto_job
+   parameters:
+    - string:
+       name: JenkinsAutoJobs
+       default: Hello Jenkins
+       description: Message to echo
+   builders:
+    - shell: "echo $JenkinsAutoJobs"
